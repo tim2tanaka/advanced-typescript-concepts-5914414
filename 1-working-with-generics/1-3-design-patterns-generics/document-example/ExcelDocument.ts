@@ -1,10 +1,11 @@
 import { Document } from "./Document";
 
 export class ExcelDocument implements Document {
-  content: string;
+  content =  "";
   name = "Table document";
   postfix = "xlsx";
-  printContent(): void {
+  printContent(): string {
     console.log(`Reading the Excel doc: ${this.content}`);
+    return `Reading document: ${this.name}`;
   }
 }

@@ -1,10 +1,11 @@
 import { Document } from "./Document";
 
 export class WordDocument implements Document {
-  content: string;
+  content =  "";
   name = "Text document";
   postfix = "docx";
-  printContent(): void {
+  printContent(): string {
     console.log(`Reading the Word doc: ${this.content}`);
+    return `Reading document: ${this.name}`;
   }
 }

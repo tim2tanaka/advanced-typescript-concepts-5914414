@@ -9,7 +9,7 @@ export class DocumentFactory {
     } else if (type === "excel") {
       return new ExcelDocument();
     } else {
-      throw new Error("Invalid document type");
+      throw new Error(`Invalid document type ${type}`);
     }
   }
 }
