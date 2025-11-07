@@ -5,5 +5,11 @@ export class PayPalStrategy implements PaymentStrategy {
     // Simulate PayPal payment processing
     console.log(`Processing PayPal payment for amount: $${amount}`);
     return `PayPal payment of $${amount} processed.`;
+  };
+  processBalance(balance: number, amount: number): number {
+    // Simulate PayPal payment processing
+    console.log(`Processing PayPal balance`);
+    const total = balance - amount;
+    return total;
   }
 }

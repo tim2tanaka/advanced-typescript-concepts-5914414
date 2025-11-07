@@ -14,4 +14,8 @@ export class PaymentProcessor {
     processPayment(amount: number): string {
         return this.strategy.processPayment(amount);
     }
+
+    processBalance(balance: number, amount: number): number {
+        return this.processBalance(balance, amount);
+    }
 }

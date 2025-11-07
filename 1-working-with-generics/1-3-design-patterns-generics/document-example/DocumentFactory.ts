@@ -9,7 +9,9 @@ export class DocumentFactory {
     } else if (type === "excel") {
       return new ExcelDocument();
     } else {
-      throw new Error(`Invalid document type ${type}`);
+      throw new Error(`
+        Invalid document type: ${type}
+        Can not create document of type: ${type}`);
     }
   }
 }
